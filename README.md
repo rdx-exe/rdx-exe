@@ -1,5 +1,4 @@
-# 💫 About Me:
-Hi! Myself Ritam Das
+# 💫 Hi!! Myself Ritam Das
 🔭 I’m currently working on open source and hackathon projects<br>👯 I’m looking to collaborate on cybersecurity research projects<br>🤝 I’m looking for help with blockchain and web3<br>🌱 I’m currently learning pentesting, computer networks and ethical hacking <br>💬
 
 
