@@ -4,11 +4,6 @@ const path = require("path");
 
 const username = "rdx-exe";
 
-// ✅ ensure folder exists (IMPORTANT FIX)
-if (!fs.existsSync("assets")) {
-  fs.mkdirSync("assets");
-}
-
 function fetch(url) {
   return new Promise((resolve) => {
     https.get(
@@ -16,7 +11,7 @@ function fetch(url) {
       { headers: { "User-Agent": "node" } },
       (res) => {
         let data = "";
-        res.on("data", (c) => (data += c));
+        res.on("data", (chunk) => (data += chunk));
         res.on("end", () => resolve(JSON.parse(data)));
       }
     );
@@ -29,8 +24,10 @@ async function generate() {
 
   // 🔥 Language aggregation
   const langs = {};
-  repos.forEach((r) => {
-    if (r.language) langs[r.language] = (langs[r.language] || 0) + 1;
+  repos.forEach((repo) => {
+    if (repo.language) {
+      langs[repo.language] = (langs[repo.language] || 0) + 1;
+    }
   });
 
   const sortedLangs = Object.entries(langs)
@@ -41,11 +38,12 @@ async function generate() {
 
   let langUI = "";
   sortedLangs.forEach(([lang, val], i) => {
-    const w = (val / maxLang) * 220;
+    const width = (val / maxLang) * 220;
+
     langUI += `
       <text x="420" y="${90 + i * 25}" class="text">${lang}</text>
-      <rect x="520" y="${80 + i * 25}" width="${w}" height="10" fill="#00FF9C">
-        <animate attributeName="width" from="0" to="${w}" dur="1.2s" fill="freeze"/>
+      <rect x="520" y="${80 + i * 25}" width="${width}" height="10" fill="#00FF9C">
+        <animate attributeName="width" from="0" to="${width}" dur="1.2s" fill="freeze"/>
       </rect>
     `;
   });
@@ -54,6 +52,7 @@ async function generate() {
   let pulseBars = "";
   for (let i = 0; i < 30; i++) {
     const h = Math.floor(Math.random() * 40) + 10;
+
     pulseBars += `
       <rect x="${40 + i * 12}" y="${260 - h}" width="6" height="${h}" fill="#00FF9C">
         <animate attributeName="height" values="5;${h};5" dur="2s" repeatCount="indefinite"/>
@@ -119,13 +118,14 @@ ${pulseBars}
 </svg>
 `;
 
+  // ✅ FINAL FIX (absolute path, always works)
   const filePath = path.join(__dirname, "../assets/dashboard.svg");
 
-// make sure folder exists
-fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  // ensure folder exists
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
 
-// write file
-fs.writeFileSync(filePath, svg);
+  // write file
+  fs.writeFileSync(filePath, svg);
 }
 
 generate();
