@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00FF9C&center=true&vCenter=true&lines=Build.+Break.+Secure.+Repeat.;Cybersecurity+%7C+Full+Stack+%7C+AI+%2B+IoT;Execution+over+Ideas" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00FF9C&center=true&vCenter=true&lines=Build.+Break.+Secure.+Repeat.;Execution+over+Ideas" />
 </p>
 
 ---
@@ -89,7 +89,7 @@
 
 ---
 
-## 🐍 Contribution Snake (Neon Mode)
+## 🐍 Contribution Snake
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/rdx-exe/rdx-exe/output/github-contribution-grid-snake-dark.svg" />
