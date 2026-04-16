@@ -44,6 +44,7 @@
   <img src="https://skillicons.dev/icons?i=kali" height="40"/>
   <img src="https://skillicons.dev/icons?i=debian" height="40"/>
   <img src="https://skillicons.dev/icons?i=redhat" height="40"/>
+  <img src="https://skillicons.dev/icons?i=apple" height="40"/>
   <img src="https://skillicons.dev/icons?i=windows" height="40"/>
   <img src="https://skillicons.dev/icons?i=anaconda" height="40"/>
   <img src="https://skillicons.dev/icons?i=vscode" height="40"/>
