@@ -3,6 +3,12 @@
 <h1 align="center">⚡ Ritam Das</h1>
 <h3 align="center">Security-Focused Developer | System Builder</h3>
 
+<!-- 🔥 SINGULARITY DASHBOARD -->
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rdx-exe/rdx-exe/main/assets/dashboard.svg" />
+</p>
+
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=00FF9C&center=true&vCenter=true&lines=Build.+Break.+Secure.+Repeat.;Cybersecurity+%7C+Full+Stack+%7C+AI+%2B+IoT;Execution+over+Ideas" />
 </p>
@@ -86,7 +92,7 @@
 ## 🐍 Contribution Snake (Neon Mode)
 
 <p align="center">
-  <img src="https://github.com/rdx-exe/rdx-exe/blob/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/rdx-exe/rdx-exe/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 ---
