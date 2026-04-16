@@ -9,22 +9,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # ✅ REQUIRED for pushing changes
     permissions:
-      contents: write   # 🔥 REQUIRED to push changes
+      contents: write
 
     steps:
+      # ✅ Updated version
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node (latest LTS)
+      # ✅ Updated + future safe
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
 
-      - name: Run generator
+      # ✅ Run your script
+      - name: Generate SVG
         run: node scripts/generate-dashboard.js
 
-      - name: Commit & Push
+      # ✅ Commit ONLY the SVG
+      - name: Commit changes
         run: |
           git config user.name "rdx-exe"
           git config user.email "actions@github.com"
