@@ -9,24 +9,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write   # 🔥 REQUIRED to push changes
+
     steps:
-      # ✅ Updated to v4
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ✅ Updated to v4 (Node 24 ready)
-      - name: Setup Node
+      - name: Setup Node (latest LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "lts/*"
 
-      - name: Generate SVG
+      - name: Run generator
         run: node scripts/generate-dashboard.js
 
-      - name: Commit changes
+      - name: Commit & Push
         run: |
-          git config --global user.name "rdx-exe"
-          git config --global user.email "actions@github.com"
-          git add .
+          git config user.name "rdx-exe"
+          git config user.email "actions@github.com"
+          git add assets/dashboard.svg
           git commit -m "update dashboard" || echo "no changes"
           git push
