@@ -4,7 +4,7 @@
 <h3 align="center">Security-Focused Developer | System Builder</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&lines=Build.+Break.+Secure.+Repeat.;Cybersecurity+%7C+Full+Stack+%7C+AI+%2B+IoT;Execution+over+Ideas" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00FF9C&center=true&vCenter=true&lines=Build.+Break.+Secure.+Repeat.;Cybersecurity+%7C+Full+Stack+%7C+AI+%2B+IoT;Execution+over+Ideas" />
 </p>
 
 ---
@@ -36,6 +36,8 @@
   <img src="https://skillicons.dev/icons?i=python" height="40"/>
   <img src="https://skillicons.dev/icons?i=c" height="40"/>
   <img src="https://skillicons.dev/icons?i=js" height="40"/>
+  <img src="https://skillicons.dev/icons?i=ts" height="40"/>
+  <img src="https://skillicons.dev/icons?i=bash" height="40"/>
 </p>
 
 ### 🌐 Development
@@ -43,58 +45,48 @@
 <p>
   <img src="https://skillicons.dev/icons?i=react" height="40"/>
   <img src="https://skillicons.dev/icons?i=nodejs" height="40"/>
+  <img src="https://skillicons.dev/icons?i=express" height="40"/>
   <img src="https://skillicons.dev/icons?i=html" height="40"/>
   <img src="https://skillicons.dev/icons?i=css" height="40"/>
+  <img src="https://skillicons.dev/icons?i=tailwind" height="40"/>
 </p>
 
-### 🗄️ Databases
+### 🗄️ Databases & Backend
 
 <p>
   <img src="https://skillicons.dev/icons?i=mongodb" height="40"/>
   <img src="https://skillicons.dev/icons?i=mysql" height="40"/>
+  <img src="https://skillicons.dev/icons?i=firebase" height="40"/>
 </p>
 
-### 🔐 Security & Tools
+### 🔐 Security & Systems
 
 <p>
   <img src="https://skillicons.dev/icons?i=linux" height="40"/>
   <img src="https://skillicons.dev/icons?i=git" height="40"/>
-  <img src="https://skillicons.dev/icons?i=vscode" height="40"/>
+  <img src="https://skillicons.dev/icons?i=docker" height="40"/>
+  <img src="https://skillicons.dev/icons?i=aws" height="40"/>
 </p>
-
----
-
-## 🔬 Active Projects
-
-### 📡 Ad-Hoc Network Security
-
-* Routing protocol analysis
-* Attack surface exploration
-* Secure communication models
-
-### 🚗 AI Smart Parking System
-
-* YOLO-based vehicle detection
-* Real-time slot classification
-* IoT-integrated architecture
-
-### 🎨 Advanced Portfolio
-
-* Motion UI + animations
-* Full-stack deployment
-* Performance optimization
 
 ---
 
 ## 📊 GitHub Intelligence
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" height="150"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=rdx-exe&show_icons=true&theme=tokyonight&hide_border=true&title_color=00FF9C&icon_color=00FF9C" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rdx-exe&theme=tokyonight&hide_border=true&ring=00FF9C&fire=00FF9C&currStreakLabel=00FF9C" height="150"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rdx-exe&layout=compact&theme=tokyonight&hide_border=true&title_color=00FF9C" height="150"/>
+</p>
+
+---
+
+## 🐍 Contribution Snake (Neon Mode)
+
+<p align="center">
+  <img src="https://github.com/rdx-exe/rdx-exe/blob/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 ---
@@ -126,5 +118,7 @@ Open for:
 ---
 
 <p align="center">
-  ⚡ <b>Consistency > Motivation | Systems > Shortcuts</b>
+  ⚡ <b style="color:#00FF9C;">Consistency > Motivation | Systems > Shortcuts</b>
 </p>
+
+---
