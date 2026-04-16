@@ -3,6 +3,11 @@ const https = require("https");
 
 const username = "rdx-exe";
 
+// ✅ ensure folder exists (IMPORTANT FIX)
+if (!fs.existsSync("assets")) {
+  fs.mkdirSync("assets");
+}
+
 function fetch(url) {
   return new Promise((resolve) => {
     https.get(
@@ -21,7 +26,7 @@ async function generate() {
   const user = await fetch(`https://api.github.com/users/${username}`);
   const repos = await fetch(`https://api.github.com/users/${username}/repos`);
 
-  // ===== LANGUAGE ENGINE =====
+  // 🔥 Language aggregation
   const langs = {};
   repos.forEach((r) => {
     if (r.language) langs[r.language] = (langs[r.language] || 0) + 1;
@@ -44,21 +49,17 @@ async function generate() {
     `;
   });
 
-  // ===== ACTIVITY PULSE =====
-  const pulse = Array.from({ length: 30 }, () =>
-    Math.floor(Math.random() * 40) + 10
-  );
-
+  // 🔥 Activity animation
   let pulseBars = "";
-  pulse.forEach((h, i) => {
+  for (let i = 0; i < 30; i++) {
+    const h = Math.floor(Math.random() * 40) + 10;
     pulseBars += `
       <rect x="${40 + i * 12}" y="${260 - h}" width="6" height="${h}" fill="#00FF9C">
         <animate attributeName="height" values="5;${h};5" dur="2s" repeatCount="indefinite"/>
       </rect>
     `;
-  });
+  }
 
-  // ===== SVG =====
   const svg = `
 <svg width="900" height="320" xmlns="http://www.w3.org/2000/svg">
 
@@ -70,7 +71,6 @@ async function generate() {
 .scan { opacity: 0.05; }
 </style>
 
-<!-- Background -->
 <rect class="bg" width="900" height="320"/>
 
 <!-- Scanlines -->
@@ -87,7 +87,7 @@ async function generate() {
 
 <!-- Titles -->
 <text x="40" y="50" class="title">SYSTEM CORE</text>
-<text x="420" y="50" class="title">LANGUAGE MATRIX</text>
+<text x="420" y="50" class="title">LANG MATRIX</text>
 <text x="40" y="210" class="title">ACTIVITY SIGNAL</text>
 
 <!-- System Info -->
@@ -96,13 +96,13 @@ async function generate() {
 <text x="40" y="120" class="text">Followers : ${user.followers}</text>
 <text x="40" y="140" class="text">Mode      : ACTIVE</text>
 
-<!-- Language UI -->
+<!-- Language Bars -->
 ${langUI}
 
 <!-- Activity Pulse -->
 ${pulseBars}
 
-<!-- Animated Sweep -->
+<!-- Sweep Effect -->
 <rect x="-200" y="0" width="200" height="320" fill="url(#grad)">
   <animate attributeName="x" from="-200" to="900" dur="3s" repeatCount="indefinite"/>
 </rect>
