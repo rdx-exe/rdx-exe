@@ -1,5 +1,6 @@
 const fs = require("fs");
 const https = require("https");
+const path = require("path");
 
 const username = "rdx-exe";
 
@@ -118,7 +119,13 @@ ${pulseBars}
 </svg>
 `;
 
-  fs.writeFileSync("assets/dashboard.svg", svg);
+  const filePath = path.join(__dirname, "../assets/dashboard.svg");
+
+// make sure folder exists
+fs.mkdirSync(path.dirname(filePath), { recursive: true });
+
+// write file
+fs.writeFileSync(filePath, svg);
 }
 
 generate();
