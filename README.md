@@ -104,6 +104,7 @@
   <img src="https://skillicons.dev/icons?i=git" height="40"/>
   <img src="https://skillicons.dev/icons?i=github" height="40"/>
   <img src="https://skillicons.dev/icons?i=gitlab" height="40"/>
+  <img src="https://skillicons.dev/icons?i=postman" height="40"/>
 </p>
 
 ---
