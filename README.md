@@ -1,6 +1,6 @@
 <!-- ===================== HEADER ===================== -->
 
-<h1 align="center">👋🏼Hi! Myself Ritam Das</h1>
+<h1 align="center">👋🏼Hi there!! I'm Ritam</h1>
 <h3 align="center">Security-Focused Developer | System Builder</h3>
 
 <!-- 🔥 SINGULARITY DASHBOARD -->
