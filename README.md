@@ -3,17 +3,6 @@
 <h1 align="center">👋🏼Hi there!! I'm Ritam</h1>
 <h3 align="center">Security-Focused Developer | System Builder</h3>
 
-<!-- 🔥 SINGULARITY DASHBOARD -->
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rdx-exe/rdx-exe/main/assets/dashboard.svg" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00FF9C&center=true&vCenter=true&lines=Build.+Break.+Secure.+Repeat.;Execution+over+Ideas" />
-</p>
-
----
 
 ## 🧠 About Me
 
@@ -118,14 +107,6 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rdx-exe&layout=compact&theme=tokyonight&hide_border=true&title_color=00FF9C" height="150"/>
-</p>
-
----
-
-## 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rdx-exe/rdx-exe/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 ---
